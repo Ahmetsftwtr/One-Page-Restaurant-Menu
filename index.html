@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
+<body>
+   
+    
+
+<div class="category">
+
+
+<h1 class="text-head" style="background-color: #EA2027;color:white;"><i class="fal fa-utensils-alt"></i> Cepte Yemek</h1>
+<div class="search">
+<input type="text" placeholder="Ürün ara">
+<button type="button"><i class="fal fa-search"></i> Ara</button>
+</div>
+<br>
+
+<div class="category_list" id="categorylist">
+
+<div class="category_item" id="categoryitem" data-category="Türk kebabs" data-img="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1071.png">
+<img src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1071.png" height="100" width="100">
+<p>Türk kebabs</p>
+</div>
+
+<div class="category_item" id="categoryitem" data-category="Pizza" data-img="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1082.png">
+<img src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1082.png">
+<p>Pizza</p>
+</div>
+
+<div class="category_item" id="categoryitem" data-category="Tost & Sandviç" data-img="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1088.png">
+    <img src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1088.png">
+    <p>Tost & Sandviç</p>
+</div>
+
+<div class="category_item" id="categoryitem" data-category="Tatlı" data-img="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1086.png">
+    <img src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1086.png">
+    <p>Tatlı</p>
+</div>
+
+<div class="category_item" id="categoryitem" data-category="Burger" data-img="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1058.png">
+    <img src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1058.png">
+    <p>Burger</p>
+</div>
+
+<div class="category_item" id="categoryitem" data-category="Köfte" data-img="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1073.png">
+    <img src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1073.png">
+    <p>Köfte</p>
+</div>
+
+<div class="category_item" id="categoryitem" data-category="Dünya Mutfağı" data-img="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1065.png">
+    <img src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1065.png">
+    <p>Dünya mutfağı</p>
+</div>
+
+<div class="category_item" id="categoryitem" data-category="Çiğköfte" data-img="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1061.png">
+    <img src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1061.png">
+    <p>Çiğköfte</p>
+</div>
+
+
+
+</div>
+
+</div>
+  
+
+
+<div style="width:100%">
+
+
+<div class="product-list" id="products">
+    <button type="button" class="closebutton" onclick="GotoMain()"><i class="fal fa-long-arrow-left"></i></button>
+    <div class="product_list_head">
+    <img id="product-head-img" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1082.png">
+    <p id="product-head-title"></p>
+</div>
+<ul>
+    <li>
+        <img id="product-img" width="100" height="100">
+        <p id="product-title"></p>
+        <div class="product_item_right">
+        <select>
+            <option selected>1</option>
+            <option  >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+        </select>
+        <button type="button"><i class="fal fa-shopping-bag"></i> Sepete ekle</button>
+    </div>
+    </li>
+    <li>
+        <img id="product-img" width="100" height="100">
+        <p id="product-title"></p>
+        <div class="product_item_right">
+        <select>
+            <option selected>1</option>
+            <option  >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+        </select>
+        <button type="button"><i class="fal fa-shopping-bag"></i> Sepete ekle</button>
+    </div>
+    </li>
+    <li>
+        <img id="product-img" width="100" height="100">
+        <p id="product-title"></p>
+        <div class="product_item_right">
+        <select>
+            <option selected>1</option>
+            <option  >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+        </select>
+        <button type="button"><i class="fal fa-shopping-bag"></i> Sepete ekle</button>
+    </div>
+    </li>
+    <li>
+        <img id="product-img" width="100" height="100">
+        <p id="product-title"></p>
+        <div class="product_item_right">
+        <select>
+            <option selected>1</option>
+            <option  >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+        </select>
+        <button type="button"><i class="fal fa-shopping-bag"></i> Sepete ekle</button>
+    </div>
+    </li>
+    <li>
+        <img id="product-img" width="100" height="100">
+        <p id="product-title"></p>
+        <div class="product_item_right">
+        <select>
+            <option selected>1</option>
+            <option  >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+        </select>
+        <button type="button"><i class="fal fa-shopping-bag"></i> Sepete ekle</button>
+    </div>
+    </li>
+    <li>
+        <img id="product-img" width="100" height="100">
+        <p id="product-title"></p>
+        <div class="product_item_right">
+        <select>
+            <option selected>1</option>
+            <option  >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+        </select>
+        <button type="button"><i class="fal fa-shopping-bag"></i> Sepete ekle</button>
+    </div>
+    </li>
+
+</ul>
+</div>    
+
+</div>
+
+
+
+<div class="basket"><i class="fal fa-shopping-bag"></i></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.category
+{
+    
+    width: 100%;
+
+
+}
+.search
+{
+    width: 40%;
+    height: 40px;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    left: 30%;
+    margin-bottom: 20px;
+}
+.search input[type=text]
+{
+    width:80%;
+    height: 34px;
+    border:1px solid #EA2027;
+}
+.search input[type=text]:focus
+{
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;    height: 100%;
+
+}
+.search input[type=text]::placeholder
+{
+    text-align: center;
+    font-size: 16px;
+}
+.search button
+{
+    width: 15%;
+    height: 40px;
+    background-color: #EA2027;
+    color:white;
+    border:none;
+}
+
+
+.text-head
+{
+   text-align: center; 
+   font-family: 'Cinzel', serif;
+   font-weight: 100;
+   font-size: 40px;
+}
+.category_list
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+.category_animation
+{
+    animation-name: getcategory;
+    animation-duration: 1s;
+}
+@keyframes getcategory {
+
+    0%{
+    left: -100%;opacity: 0.3;
+    }
+    100%{
+    left: 0%;opacity: 1;
+    }
+    
+}
+.category_item
+{
+    height: 180px;
+    position: relative;
+    width: 150px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+
+}
+.category_item img
+{
+    width: 150px;
+    height: 150px;
+}
+.category_item p 
+{
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    font-weight: 550;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+
+}
+.product-list
+{
+    margin-right: 20px;
+    animation-name: getproduct;
+    animation-duration: 1s;
+    position: relative;
+    top: -100%;
+}
+@keyframes getproduct {
+
+    0%{
+    left: -100%;opacity: 0.3;
+    }
+    100%{
+    left: 0%;opacity: 1;
+    }
+    
+}
+.product_list_head
+{
+    text-align: center;
+    line-height: 0;
+    
+}
+.product-list .product_list_head p
+{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+
+}
+.product-list .product_list_head img
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border:2px solid #EA2027;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-list ul
+{
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+.product-list ul li
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    display:inline-flex;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    
+}
+.product-list ul li:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+
+}
+.product_item_right
+{
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+.product-list ul li button
+{
+    height: 40px;
+    width: 100px;
+    background-color: #EA2027;
+    color:white;
+    border:none;
+    border-radius: 5px;
+
+}
+.product-list ul li select
+{
+    height: 40px;
+    width: 40px;
+
+}
+.product-list ul li button:hover
+{
+    background-color: #EA2027;
+    color:white;
+}
+.closebutton
+{
+    width: 20px;
+    height: 20x;
+    background-color: transparent;
+    color:#EA2027;
+    font-size: 40px;
+    margin-left: 10px;
+    border:none;
+    cursor: pointer;
+}
+.basket
+{
+    width: 40px;
+    height: 35px;
+    background-color: #EA2027;
+    color:white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 25px;
+    position: fixed;
+    right:0;
+    bottom: 10px;
+}
+
+@media screen and (min-width:275px) and (max-width:450px)
+{
+
+.product-list ul li img
+{
+    width: 70px;
+    height: 70px;
+    padding-right: 10px;
+}
+.product-list ul li p
+{
+    font-size: 18px;
+    padding-right: 100px;
+
+}
+.product_item_right
+{
+    position: absolute;
+    right: 10px;
+    top: 10%;
+}
+
+.search
+{
+    width: 380px;
+    height: 40px;
+    left: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+}
+
+@media screen and (max-width:600px)
+{
+.search
+{
+    width: 450px;
+    height: 40px;
+    left: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+}
